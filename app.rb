@@ -1,3 +1,4 @@
+require 'pry'
 require 'sinatra'
 require 'redis'
 
@@ -30,7 +31,7 @@ get '/' do
 end
 
 post '/' do
-  if good_url?
+  if params[:url] and not params[:url].empty?
     @shortcode = random_string(5)
     redis.setnx "links:#{@shortcode}", params[:url]
   end
@@ -38,6 +39,6 @@ post '/' do
 end
 
 get '/:shortcode' do
-  @url = redis.get "links#{params[:shortcode]}"
+  @url = redis.get "links:#{params[:shortcode]}"
   redirect @url || '/'
 end
