@@ -1,4 +1,4 @@
-======Link Shortner { Sinatra - Redis }
+##Link Shortner { Sinatra - Redis }
 ========
 
 #### This Project was build to incorporate a Redis DB and built with Sinatra
