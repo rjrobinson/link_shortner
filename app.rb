@@ -24,3 +24,16 @@ end
 get '/' do
   erb :index
 end
+
+post '/' do
+  if params[:url] && !params[:url].empty?
+    @shortcode = random_string(5)
+    redis.setnx "links:#{@shortcode}", params[:url]
+  end
+  erb :index
+end
+
+get '/:shortcode' do
+  @url = redis.get "links#{params[:shortcode]}"
+  redirect @url || '/'
+end
