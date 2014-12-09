@@ -16,6 +16,10 @@ helpers do
   end
 end
 
+def good_url?
+  params[:url] && !params[:url].empty?
+end
+
 ##############
 # ROUTES
 ##############
@@ -26,7 +30,7 @@ get '/' do
 end
 
 post '/' do
-  if params[:url] && !params[:url].empty?
+  if good_url?
     @shortcode = random_string(5)
     redis.setnx "links:#{@shortcode}", params[:url]
   end
