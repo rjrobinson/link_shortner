@@ -1,19 +1,19 @@
-##Link Shortner - Sinatra & Redis
+#Link Shortner - Sinatra & Redis
 
 #####This Project was build to incorporate a Redis DB and built with Sinatra
 
-#Features
+##Features
 --------
 
 - Shortens links ( They will more then likely come out bigger. :) )
 
 
-#Getting Started
+##Getting Started
 You're going to need:
 
 1. Ruby, version 1.9.3 or newer
 
-##Installation
+###Installation
 --------
 
 1. Clone directory.
