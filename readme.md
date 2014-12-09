@@ -1,6 +1,6 @@
 #Link Shortner - Sinatra & Redis
 
-#####This Project was build to incorporate a Redis DB and built with Sinatra
+#####This Project was built to incorporate a Redis DB and built with Sinatra
 
 ##Features
 --------
