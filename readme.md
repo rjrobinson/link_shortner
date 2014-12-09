@@ -1,17 +1,23 @@
-##Link Shortner { Sinatra - Redis }
-========
+##Link Shortner - Sinatra & Redis
 
-#### This Project was build to incorporate a Redis DB and built with Sinatra
+#####This Project was build to incorporate a Redis DB and built with Sinatra
 
-###Features
+#Features
 --------
 
-- Shortens links ( well not really. they more then likely come out bigger.)
+- Shortens links ( They will more then likely come out bigger. :) )
 
-###Installation
-------------
 
-To run, clone directory.
+#Getting Started
+You're going to need:
+
+1. Ruby, version 1.9.3 or newer
+
+##Installation
+--------
+
+1. Clone directory.
+2. Run bundle , if needed.
 
 In your terminal type
 ``` Ruby
@@ -21,17 +27,17 @@ In your terminal type
 In your browser go to
 `localhost:4567`
 
-###Contribute
-----------
+##Contribute
+--------
 Not necessary.
 
 
-###Support
--------
+##Support
+--------
 
 No support offered at this time.
 
-###License
--------
+##License
+--------
 
 The project is licensed under the MIT license.
